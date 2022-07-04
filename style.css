@@ -31,9 +31,13 @@ box-shadow: 2px 2px 50px rgb(218, 218, 218);
         font-size: 35px;
         font-weight: 900;
         color: black;
+        
     }
 .logo-area a span{
     color:orangered ;
+    font-family: 'Titan One', cursive;
+    letter-spacing: 2px;
+
     }
 ul {
     list-style-type:none;
@@ -49,7 +53,8 @@ ul li a{
     
 }
 ul li a:hover{
-    color:red;
+    color:rgb(152, 41, 8);
+    transition: .5s;
 }
 ul li span.contact{
     background-color: orangered;
@@ -92,25 +97,52 @@ ul li{
     
 }
 .bio .bio-left h5 {
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 15px;
+    color: orangered;
+    position: relative;
 }
+.bio-left h5::before{
+content: "";
+position: absolute;
+height: 18px;
+width: 18px;
+border-radius: 100px;
+left: 215px;
+top: 4px;
+background-color: orangered;
+}
+.bio-left h5::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 25px;
+    border-radius: 100px;
+    background-color: orangered;
+    top: 10px;
+    left: 196px;
+    }
 .bio .bio-left h2{
     font-size: 50px;
-    font-weight: 700;
-    margin-top: 20px;
+    margin-top: 15px;
     
 }
 .bio .bio-left h2 span{
     color: orangered;
     text-transform: uppercase;
-    font-style: italic;
+    font-weight: 700;
+
 }
 .bio .bio-left p{
     text-align: justify;
     letter-spacing: 1px;
     margin-top: 20px;
     line-height: 25px;
+    
+}
+.para{
+    border-left: 5px solid orangered;
+    padding-left: 20px;
 }
 .bio .bio-left .hire-me {
     text-decoration: none;
@@ -119,7 +151,7 @@ ul li{
     padding: 12px 25px;
     border-radius: 5px;
     border:1px solid orangered ;
-    margin-top: 20px;
+    margin-top: 40px;
     cursor: pointer;
     font-weight: 600;
 }
@@ -129,4 +161,50 @@ ul li{
     color: orangered;
     transition: .5s;
 
+}
+.bio .bio-left .find{
+    font-weight: 700;
+    color: orangered;
+    margin-bottom: 10px;
+    position: relative;
+}
+.bio-left .find::before{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 100px;
+    left: 150px;
+    top: 4px;
+    background-color: orangered;
+    }
+    .bio-left .find::after{
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 25px;
+        border-radius: 100px;
+        background-color: orangered;
+        top: 10px;
+        left: 130px;
+        }
+.bio .bio-left i{
+    border: 1px solid orangered;
+    color: orangered;
+    padding: 10px;
+    border-radius:100px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+.bio .bio-left i:hover{
+    border: 1px solid orangered;
+    background-color: orangered;
+    color: #fff;
+    transition: .5s;
+
+}
+hr{
+    height: 1px;
+    margin-top: 70px;
 }
