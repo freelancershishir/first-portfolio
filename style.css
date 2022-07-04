@@ -4,7 +4,8 @@
 
 }
 body{
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
 
 }
 .container{
@@ -28,7 +29,7 @@ box-shadow: 2px 2px 50px rgb(218, 218, 218);
     {
         text-decoration: none;
         font-size: 35px;
-        font-weight: 700;
+        font-weight: 900;
         color: black;
     }
 .logo-area a span{
@@ -43,7 +44,7 @@ ul li a{
     text-decoration: none;
     font-size: 15px;
     color:orangered ;
-    font-weight: 700;
+    font-weight: 500;
     
 }
 ul li span.contact{
@@ -63,4 +64,65 @@ ul li span.contact:hover{
 ul li{
     list-style: none;
     margin: 15px 15px;
+}
+.bio-container{
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px 0;
+}
+.bio{
+    display: flex;
+}
+.bio .bio-left{
+    width: 50%;
+    margin-top: 100px;
+}
+.bio .image {
+    width: 50%;
+}
+.bio .image img {
+    height: 100%;
+    
+}
+.bio .bio-left h5 {
+    font-weight: 700;
+    font-size: 18px;
+}
+.bio .bio-left h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+    
+}
+.bio .bio-left h2 span{
+    color: orangered;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.bio .bio-left p{
+    text-align: justify;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.bio .bio-left .hire-me {
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border:1px solid orangered ;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.bio .bio-left .hire-me:hover{
+    border: 1px solid orangered;
+    background-color: #fff;
+    color: orangered;
+    transition: .5s;
+
 }
